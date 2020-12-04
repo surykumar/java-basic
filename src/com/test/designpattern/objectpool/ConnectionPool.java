@@ -3,6 +3,7 @@ package com.test.designpattern.objectpool;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
 public class ConnectionPool extends ReusablePool<Connection> {
     private String url, username, password;
     public ConnectionPool(String driver, String url, String username, String password) {
